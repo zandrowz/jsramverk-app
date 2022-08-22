@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header";
+import React, { useRef } from "react";
+import  { TrixEditor } from "react-trix";
+// import './App.css';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const inputRef = useRef(null);
+    function handleClick() {
+        // update input value
+        var element = document.querySelector("trix-editor")
+
+        inputRef.current.value = element.editor.getDocument().toString();
+        console.log(inputRef.current.value);
+    }
+
+      return (
+        <div className="container">
+            <Header />
+            <TrixEditor 
+            ref={inputRef} />
+            <button onClick={handleClick}>Spara</button>
+      </div>
+      );
 }
 
 export default App;

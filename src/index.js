@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+// import './index.css';
+// import "trix/dist/trix";
+// import "./Trix.css";
+import "trix/dist/trix.css";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
