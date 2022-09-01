@@ -28,6 +28,15 @@
   color: #61dafb;
 }
 
+button {
+    margin-bottom: 15px;
+    background-color: pink;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

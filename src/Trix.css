@@ -1,9 +1,9 @@
-@charset "UTF-8";
+/* @charset "UTF-8"; */
 /*
 Trix 0.11.3
 Copyright Â© 2018 Basecamp, LLC
 http://trix-editor.org/*/
-trix-editor {
+/* trix-editor {
   border: 1px solid #bbb;
   border-radius: 3px;
   margin: 0;
@@ -290,4 +290,4 @@ trix-editor .attachment__remove--icon {
     margin: 0 2px 2px 0;
     padding: 0.4em 1em;
     border: 1px solid #bbb;
-    border-radius: 5px; }
+    border-radius: 5px; } */
