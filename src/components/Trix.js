@@ -1,20 +1,23 @@
 import  { TrixEditor } from "react-trix";
-import React, { useRef } from "react";
+import React, { useState } from "react";
 
 function Editor() {
-    const inputRef = useRef(null);
-    function handleClick() {
-        const element = document.querySelector("trix-editor")
+    const [message, setMessage] = useState("");
 
-        inputRef.current.value = element.editor.getDocument().toString();
-        console.log(inputRef.current.value);
+    function handleChange(event, newMessage) {
+      setMessage(newMessage);
+    }
+    
+    const handleClick = event => {
+        //event.preventDefault();
+        console.log(message);
     }
 
     return (
         <div>
             <button onClick={handleClick}>Spara</button>
             <TrixEditor 
-            ref={inputRef} />
+            onChange={handleChange}/>
         </div>
         );}
 
