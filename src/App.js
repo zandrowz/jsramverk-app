@@ -1,8 +1,8 @@
-import "trix/dist/trix.css";
+//import "trix/dist/trix.css";
 import "./App.css";
-import Header from "./components/Header";
 import React from "react";
 
+import Header from "./components/Header";
 import Editor from "./components/Trix";
 
 //import  { TrixEditor } from "react-trix";

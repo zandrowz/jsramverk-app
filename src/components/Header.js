@@ -1,10 +1,9 @@
-
-function Header() {
-  return (
-    <header>
-        <h1>Real-time collaborative document editor</h1>
-    </header>
-  )
+const Header = () => {
+    return (
+        <header className="header">
+            <h1>Trix Editor</h1>
+        </header>
+    )
 }
 
 export default Header
