@@ -1,7 +1,5 @@
 import { render, screen, fireEvent } from '@testing-library/react';
-
 import Editor from './Trix';
-
 
 test('renders "create new" button', () => {
     render(<Editor />);
