@@ -122,15 +122,15 @@ function Editor() {
                     {docs.map((doc, index) => <option value={index} key={index}>{doc.name}</option>)}
                 </select>
 
-                <button onClick={saveForm}>Create new</button>
+                <button className="btn1" onClick={saveForm}>Create new</button>
                 <button className="btn" onClick={() => updateDoc()}>Update</button>
                 {/* <button onClick={handleClick}>Reset</button> */}
             </trix-toolbar>
 
             <form className = "saveForm" id = "saveForm" onSubmit = { (event) => { createObject(event);} } style = {{display: "none"}}>
                 <input className="btn" id="button" type = "submit" value = "Save"></input>
-                <input className = "documentTitle" id="documentTitle" type="text" placeholder="< Enter a title >" onChange={ (event) => { setName(event); }}>
-                </input>
+                <label>Enter a title: <input className="documentTitle" id="documentTitle" type="text" onChange={ (event) => { setName(event); }} /></label>
+                
             </form>
 
 {/* 

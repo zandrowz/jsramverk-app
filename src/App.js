@@ -2,7 +2,6 @@
 import "./App.css";
 import React from "react";
 
-import Header from "./components/Header";
 import Editor from "./components/Trix";
 
 //import  { TrixEditor } from "react-trix";
@@ -11,9 +10,11 @@ import Editor from "./components/Trix";
 function App() {
       return (
         <div>
-            <Header />
+            <header className="header">
+                <h1>React Trix Editor</h1>
+            </header>
             <Editor />
-      </div>
+        </div>
       );}
 
 export default App;
