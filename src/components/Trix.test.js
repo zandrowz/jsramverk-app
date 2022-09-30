@@ -27,4 +27,4 @@ test('renders title input label text', () => {
     render(<Editor />);
     const labelText = screen.getByLabelText("Enter a title:");
     expect(labelText).toBeInTheDocument();
-  });
+});
