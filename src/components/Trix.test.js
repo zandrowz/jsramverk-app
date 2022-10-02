@@ -15,13 +15,13 @@ test('renders "save" button when "create new" button pressed', () => {
     expect(saveButton).toBeInTheDocument();
 });
 
-test('renders "select option', () => {
+test('renders "select option"', () => {
     render(<Editor />);
     const selectOpt = screen.getByRole("option");
     expect(selectOpt).toBeInTheDocument();
 });
 
-test('renders title input label text', () => {
+test('renders the title input field', () => {
     render(<Editor />);
     const labelText = screen.getByLabelText("Enter a title:");
     expect(labelText).toBeInTheDocument();
